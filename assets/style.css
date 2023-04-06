@@ -1,6 +1,6 @@
 :root {
-    --primary-color : blue;
-    --secondary-color : gold;
+    --primary-color : #0467ac;
+    --secondary-color : #debb0b;
 }
 
 * {
@@ -44,7 +44,6 @@ ul.nav-menu {
 }
 .nav-list {
     width: 100%;
-    background-color: var(--primary-color);
     text-align: center;
     margin: 10px 0;
     padding: 8px;
@@ -53,8 +52,15 @@ ul.nav-menu {
 .nav-list > a {
     text-decoration : none;
     font-weight: 700;
+    color: var(--primary-color);
+}
+.nav-list.active {
+    background-color: var(--primary-color);
+}
+.nav-list.active > a {
     color: #FFFFFF;
 }
+
 
 
 /* Main Style */
@@ -63,12 +69,12 @@ ul.nav-menu {
 }
 
 .box-content {
-    border: 3px solid blue;
+    border: 3px solid var(--primary-color);
     border-radius: 3px;
     box-shadow: 0px 0px 10px;
 }
 .content-header {
-    background-color: blue;
+    background-color: var(--primary-color);
 }
 .content-header > h1 {
     color: #FFFFFF;
