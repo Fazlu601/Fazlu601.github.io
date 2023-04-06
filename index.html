@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga & Jajar Genjang</title>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header id="header">
+        <div class="container">
+            <h1>Welcome to Katik</h1>
+            <div class="row">
+                <p>Hai Sobat, Selamat datang di Katik 😉</p>
+                <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Segitiga</a></li>
+                    <li><a href="#">Jajar Genjang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main id="main">
+        <div class="container">
+            <div class="box-content">
+                <div class="content-header">
+                    <h1>Luas Segitiga</h1>
+                </div>
+                <div class="content-body">
+                    <div class="content-example">
+                        <img src="#" alt="Segitiga">
+                        
+                    </div>
+                    <div class="content-form">
+                        <h1>Hitung Luas Segitiga</h1>
+                        <form id="form-submit">
+                            <div class="form-group">
+                                <input type="number" placeholder="Nilai Alas" id="a" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Nilai Tinggi" id="t" class="form-control">
+                            </div>
+                            <div class="answer">
+                                <ul>
+                                    <li>L = 1/2 x a x t</li>
+                                    <li>L = <span id="math"></span></li>
+                                    <li>L = <span id="result"></span></li>
+                                </ul>
+                            </div>
+                            <button type="submit" id="b-submit" class="submit-button">Hitung</button>
+                            <button type="button" id="b-reset" class="reset-button">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main Section End -->
+</body>
+</html>
