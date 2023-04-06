@@ -1,0 +1,145 @@
+:root {
+    --primary-color : blue;
+    --secondary-color : gold;
+}
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family: sans-serif;
+}
+
+.d-none {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    padding: 30px;
+}
+
+#header > .container > .title-header {
+    font-size: 36px;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 10px 0;
+}
+#header > .container > .row > p {
+    text-align: center;
+    font-weight: 500;
+    margin: 3px 0;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px;
+}
+ul.nav-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-list {
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 3px;
+}
+.nav-list > a {
+    text-decoration : none;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+/* Main Style */
+#main > .container {
+    widht: 100%;
+}
+
+.box-content {
+    border: 3px solid blue;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px;
+}
+.content-header {
+    background-color: blue;
+}
+.content-header > h1 {
+    color: #FFFFFF;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.content-body {
+    padding: 30px;
+}
+
+.content-example > img {
+    display: block;
+    margin: 10px auto;
+}
+.content-example > ul {
+    list-style: none;
+    margin: 10px 0;
+}
+.content-example > ul > li:first-child {
+    text-align: center;
+}
+.content-example > ul > li {
+    margin: 5px 0;
+}
+
+.content-form {
+    padding: 10px;
+}
+.content-form > h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+#form-submit > .form-group {
+    width: 100%;
+    margin: 20px 10px 0;
+}
+.form-group > .form-control {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+
+.answer > ul {
+    list-style: none;
+}
+.answer > ul > li {
+    margin: 10px;
+}
+
+button {
+    width: 100px;
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: none;
+}
+
+button.submit-button {
+    display: block;
+    margin: 10px auto;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+.button-group-reset {
+    display: flex;
+    justify-content: right;
+}
+button.reset-button {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+}
+

@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Kalkulator Segitiga & Jajar Genjang</title>
 </head>
 <body>
     <!-- Header Section Start -->
     <header id="header">
         <div class="container">
-            <h1>Welcome to Katik</h1>
+            <h1 class="title-header">Welcome to Katik</h1>
             <div class="row">
                 <p>Hai Sobat, Selamat datang di Katik 😉</p>
                 <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Segitiga</a></li>
-                    <li><a href="#">Jajar Genjang</a></li>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-list"><a href="#">Segitiga</a></li>
+                    <li class="nav-list"><a href="#">Jajar Genjang</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,9 +35,17 @@
                 </div>
                 <div class="content-body">
                     <div class="content-example">
-                        <img src="#" alt="Segitiga">
-                        
+                        <img src="assets/image/courseRevo.drawio.png" alt="Segitiga">
+                        <p>Rumus Luas Segitiga yaitu :</p>
+                        <ul>
+                            <li>L = 1/2 x a x t</li>
+                            <li>Dimana :</li>
+                            <li>L = Luas</li>
+                            <li>a = Panjang Alas</li>
+                            <li>t = Tinggi</li>
+                        </ul>
                     </div>
+                    <hr>
                     <div class="content-form">
                         <h1>Hitung Luas Segitiga</h1>
                         <form id="form-submit">
@@ -46,15 +55,19 @@
                             <div class="form-group">
                                 <input type="number" placeholder="Nilai Tinggi" id="t" class="form-control">
                             </div>
-                            <div class="answer">
+                            <div id="answer-box" class="answer d-none">
                                 <ul>
                                     <li>L = 1/2 x a x t</li>
                                     <li>L = <span id="math"></span></li>
                                     <li>L = <span id="result"></span></li>
                                 </ul>
                             </div>
-                            <button type="submit" id="b-submit" class="submit-button">Hitung</button>
-                            <button type="button" id="b-reset" class="reset-button">Reset</button>
+                            <div class="button-group">
+                                <button type="submit" id="b-submit" class="submit-button">Hitung</button>
+                            </div>
+                            <div class="button-group-reset">
+                                <button type="button" id="b-reset" class="reset-button">Reset</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -62,5 +75,7 @@
         </div>
     </main>
     <!-- Main Section End -->
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
